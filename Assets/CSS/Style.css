@@ -1,24 +1,65 @@
 .container{
-    background-color: black;
-    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    background-color: white;
+    color: rgb(151, 131, 131);
     font-family: Arial, Helvetica, sans-serif;
-    width: 1000px;
+    width: 80%;
     margin: auto;
+    
 }
 .header{
     width: 100%;
     height:486px;
+    grid-column: 1/4;
+    background-image: url("../Img/3dMJEvI.jpg");
     background-color: aqua;
 }
 body{
     background-color: purple;
 }
-.menu{
-    margin: 0px;
-    width: 100%;
-    height: 50px;
-    background-color: darkgoldenrod
+.menu{ 
+    grid-column: 1/4;
+    overflow: hidden;
+    background-color: darkgoldenrod;
+    align-items: center;
+    float: left;
+    text-align: center;
+    padding: 0px, 20px, 20px, 0px;
 }
+.menu li {
+    grid-column: 1/4;
+    float: left;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 0px 20px 20px 0px;
+    text-decoration: none;
+}
+.Sinopsis{
+    grid-column: 2/4;
+    grid-template-columns: repeat(4,1fr);
+    background-color: aqua;
+    padding: 0 10% 0 10%;
+}
+.Sinopsis h3{
+    grid-column: 2/5;
+}   
 h4{
-    background-color: yellow;
+    background-color: yellowgreen;
+}
+footer{
+    width: 100%;
+    grid-column: 1/4;
+    background-color: black;
+    color: white
+}
+
+.algo{
+    grid-column: 4/2;
+    padding: 0px 200px 0px 200px;
+}
+.articulo{
+    grid-column: 1/4;
 }
